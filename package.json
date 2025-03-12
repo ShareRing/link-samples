@@ -1,0 +1,24 @@
+{
+  "name": "link-samples",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nx run-many --target=build --all",
+    "test": "nx run-many --target=test --all",
+    "lint": "nx run-many --target=lint --all",
+    "prettier": "nx run-many --target=prettier --all",
+    "prepare": "npx patch-package"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nx/js": "20.5.0",
+    "eslint": "^9.22.0",
+    "nx": "20.5.0",
+    "patch-package": "^8.0.0",
+    "prettier": "^3.5.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
